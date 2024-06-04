@@ -1,0 +1,34 @@
+BotToken: ""
+# Available types: PLAYING, LISTENING, WATCHING, CUSTOM_STATUS, COMPETING
+BotActivityType: PLAYING
+BotActivityName: "SiteB Minecraft Server!"
+# The channel id in which you'd like the bot to send & receive messages to sync from.
+# only text channels are supported, (obviously :)
+SyncChannelID:
+# The format in which the plugin will send the messages to players.
+# Hex colors and legacy color codes are supported
+MinecraftFormat: "&#002d75Discord &#ffffff{user} &#949494{message}"
+
+# when enabled the plugin will try to determine if any player's names/display names have been mentioned in a discord message and highlight their name just for them
+# a sound can also optionally be played for that player.
+MentionMinecraftPlayers: true
+
+# which color a player's name will be when they are mentioned from a discord message.
+# their name will only be colored to their view and not for the other players.
+# leave this field empty to apply no coloring.
+# only hex colors are supported!
+MentionColor: "#fc7e00"
+
+# format: TYPE, volume, pitch
+# you can leave it empty to not play any sound.
+MentionMinecraftSound: block.note_block.pling, 1.0, 1.0
+
+# when this is enabled the plugin will match & extract urls to format them in a small clickable word to not flood the chat.
+# when this is disabled the plugin will still make the link clickable. but will not format it.
+# Hex colors and legacy color codes are supported
+ExtractUrls: true
+ExtractedUrlFormat: "&a[URL]"
+
+# Determines how the messages are formatted on discord. no colors are supported
+# any formatting provided by discord should work. such as markdown
+DiscordMessageFormat: "**[{user}]**: {message}"
